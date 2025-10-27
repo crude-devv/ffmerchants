@@ -158,7 +158,14 @@ import Layout from '../layouts/Layout.astro';
           <div>
             <h3 class="text-2xl font-bold text-navy-authority mb-6">Your Business Details</h3>
             
-            <form id="fundingCalculatorForm" class="space-y-6">
+            <form 
+              id="fundingCalculatorForm" 
+              name="funding-calculator"
+              method="POST"
+              data-netlify="true"
+              class="space-y-6"
+            >
+              <input type="hidden" name="form-name" value="funding-calculator" />
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">Business Name *</label>
                 <input 
@@ -533,7 +540,14 @@ import Layout from '../layouts/Layout.astro';
         <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
           <h3 class="text-2xl font-bold mb-6">Request a Consultation</h3>
           
-          <form id="consultationForm" class="space-y-4">
+          <form 
+            id="consultationForm" 
+            name="consultation"
+            method="POST"
+            data-netlify="true"
+            class="space-y-4"
+          >
+            <input type="hidden" name="form-name" value="consultation" />
             <div>
               <label class="block text-sm font-medium text-emerald-100 mb-2">Your Name *</label>
               <input 
